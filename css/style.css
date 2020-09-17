@@ -1,6 +1,8 @@
 body {
-	font: 20px 'Bebas Neue', sans-serif;
+    font: 20px 'Bebas Neue', sans-serif;
+    /*background-color: #eee;*/
 }
+
 /*#wrapper {
 	max-width: 1400px;
 	margin: 0 auto;
@@ -28,30 +30,27 @@ body {
 /* Header
 -----------------------------------------------------------------------------*/
 #header {
-    display: flex;
-    flex-direction: column;
+    position: relative;
 }
 
-#topPauseButton{
-    width: 250px;
-    margin: 0 auto;
-    background-color: #781ead;
-    text-align: center;
-    color: #fff;
-    border: dotted 1px #000;
-    border-top: none;
-    font-size: inherit;
-    font-size: 0.8em;
+#topPauseButton {
+    position: absolute;
+    width: 50px;
+    bottom: 20px;
+    left: 10px;
+}
+
+#topPauseButton img {
+    opacity: 0.4;
 }
 
 
 /* Middle
 -----------------------------------------------------------------------------*/
-#content {
-}
+#content {}
 
-#hashtag{
-    margin-top: 6em;
+#hashtag {
+    padding-top: 3em;
     display: flex;
     justify-content: center;
 }
@@ -62,11 +61,11 @@ body {
     z-index: 5;
 }
 
-/*#soundInterviewArticle {
+#soundInterviewArticle {
     background-image: url(../img/wall-texture-20opacity.png);
     background-repeat: no-repeat;
     background-size: cover;
-}*/
+}
 
 #soundInterview {
     margin-top: -60px;
@@ -91,7 +90,10 @@ body {
 }
 
 #infographic {
-    margin: 6em 0;
+    padding: 5em 0;
+    background-image: url(../img/wall-texture-20opacity.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .statistics {
@@ -113,7 +115,7 @@ body {
 }
 
 #advices div {
-    margin: 2em 0;
+    padding-bottom: 2em;
 }
 
 
@@ -181,18 +183,32 @@ body {
 
 /* Footer
 -----------------------------------------------------------------------------*/
-#footer div {
+#footer {
+    padding: 3em 0;
+}
+
+#footer #klankHomepage {
+    padding: 0.5em;
     width: 20%;
     background-color: #781ead;
-    padding: 1em;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 3em;
 }
 
-#footer div a {
-text-decoration: none;
+#footer #klankHomepage a {
+    text-decoration: none;
     color: white;
-     font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5em;
 }
 
+#soMe {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+#soMe img {
+    height: 80px;
+    padding: 0 1em;
+}

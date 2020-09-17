@@ -17,18 +17,25 @@ $(document).ready(function () { // kører så snart DOM er klar
         ourVideos[0].play();
     })
     
-    //Lyd og Videoer gemt i array
+    //Videoer og mute ikoner gemt i array
     let ourVideos = [
         document.getElementById('tekstVideo'),
         document.getElementById('pictureVideo')
     ];
+    
+    let muteIcon = [
+        '<img src="img/soundOn.svg" alt="sound icon">',
+        '<img src="img/soundOff.svg" alt="sound icon">'
+    ]
 
     //Knap function til at pause og spille stemnings videoen med tekst og lyd
     $('#topPauseButton').click(function(){
         if (ourVideos[0].paused) {
             ourVideos[0].play();
+            $('#topPauseButton').html(muteIcon[0]);
         } else {
             ourVideos[0].pause();
+            $('#topPauseButton').html(muteIcon[1]);
         }
     });
 
