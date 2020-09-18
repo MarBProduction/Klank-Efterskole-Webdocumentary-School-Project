@@ -210,5 +210,10 @@ body {
 
 #soMe img {
     height: 80px;
-    padding: 0 1em;
 }
+
+#soMe a {
+    margin: 0 1em;
+}
+
+
